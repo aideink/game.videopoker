@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Poker Deluxe</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <div class="logo">Video Poker Deluxe</div>
+            <div class="stats-container">
+                <div class="stat-box credits">
+                    <div class="stat-label">CREDITS</div>
+                    <div class="stat-value" id="credits">100</div>
+                </div>
+                <div class="stat-box bet">
+                    <div class="stat-label">BET</div>
+                    <div class="bet-controls">
+                        <button class="bet-btn" id="betDown">-</button>
+                        <div class="stat-value" id="betAmount">1</div>
+                        <button class="bet-btn" id="betUp">+</button>
+                    </div>
+                </div>
+                <div class="stat-box win">
+                    <div class="stat-label">WIN</div>
+                    <div class="stat-value" id="winAmount">0</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="paytable-container">
+            <div class="paytable-scroll">
+                <table class="paytable">
+                    <tr class="royal-flush"><td>ROYAL FLUSH</td><td>800</td></tr>
+                    <tr><td>STRAIGHT FLUSH</td><td>50</td></tr>
+                    <tr><td>FOUR OF A KIND</td><td>25</td></tr>
+                    <tr><td>FULL HOUSE</td><td>9</td></tr>
+                    <tr><td>FLUSH</td><td>6</td></tr>
+                    <tr><td>STRAIGHT</td><td>4</td></tr>
+                    <tr><td>THREE OF A KIND</td><td>3</td></tr>
+                    <tr><td>TWO PAIR</td><td>2</td></tr>
+                    <tr><td>JACKS OR BETTER</td><td>1</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="cards-container">
+            <div class="cards" id="cards">
+                <div class="card-wrapper">
+                    <div class="card" data-index="0">
+                        <div class="card-inner">
+                            <div class="card-face"></div>
+                            <div class="card-back"></div>
+                        </div>
+                        <div class="hold-label">HOLD</div>
+                    </div>
+                </div>
+                <div class="card-wrapper">
+                    <div class="card" data-index="1">
+                        <div class="card-inner">
+                            <div class="card-face"></div>
+                            <div class="card-back"></div>
+                        </div>
+                        <div class="hold-label">HOLD</div>
+                    </div>
+                </div>
+                <div class="card-wrapper">
+                    <div class="card" data-index="2">
+                        <div class="card-inner">
+                            <div class="card-face"></div>
+                            <div class="card-back"></div>
+                        </div>
+                        <div class="hold-label">HOLD</div>
+                    </div>
+                </div>
+                <div class="card-wrapper">
+                    <div class="card" data-index="3">
+                        <div class="card-inner">
+                            <div class="card-face"></div>
+                            <div class="card-back"></div>
+                        </div>
+                        <div class="hold-label">HOLD</div>
+                    </div>
+                </div>
+                <div class="card-wrapper">
+                    <div class="card" data-index="4">
+                        <div class="card-inner">
+                            <div class="card-face"></div>
+                            <div class="card-back"></div>
+                        </div>
+                        <div class="hold-label">HOLD</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls-container">
+            <button id="dealBtn" class="game-button">DEAL</button>
+            <button id="drawBtn" class="game-button" disabled>DRAW</button>
+        </div>
+
+        <div id="message" class="message-banner"></div>
+    </div>
+    <script src="poker.js"></script>
+</body>
+</html> 
